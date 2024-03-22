@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Nunito+Sans:wght@400;500;700&family=Paytone+One&family=Poppins:wght@300;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Fasthand&family=Nunito+Sans:wght@400;500;700&family=Paytone+One&family=Poppins:wght@300;600;800&family=Smooch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Fasthand&family=Nunito+Sans:wght@400;500;700&family=Paytone+One&family=Poppins:wght@300;600;800&family=Smooch&family=Ysabeau+SC:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Dosis:wght@500&family=Fasthand&family=Nunito+Sans:wght@400;500;700&family=Paytone+One&family=Poppins:wght@300;600;800&family=Smooch&family=Ysabeau+SC:wght@500&display=swap');
+
+:root{
+    --main-color: #4f93ec;
+    --black:#222;
+    --second-color:#666;
+    --light-white:#ccc;
+    --light-bg:#f5f5f5;
+    --dark-bg:rgba(0,0,0,.7);
+    --border:.1rem solid rgba(0,0,0,.3);
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    }
+
+    *{
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+   
+}
+body{
+    background:linear-gradient(rgba(158, 158, 163, 0.384),rgba(81, 81, 88, 0.5)), url(images/biotechnology-specialist-laboratory-conducting-experiments.jpg);
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h3{
+    font-size: 54px;
+    font-weight: 600;
+    color: white;
+}
+a{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}

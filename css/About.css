@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Nunito+Sans:wght@400;500;700&family=Paytone+One&family=Poppins:wght@300;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Fasthand&family=Nunito+Sans:wght@400;500;700&family=Paytone+One&family=Poppins:wght@300;600;800&family=Smooch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Fasthand&family=Nunito+Sans:wght@400;500;700&family=Paytone+One&family=Poppins:wght@300;600;800&family=Smooch&family=Ysabeau+SC:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Dosis:wght@500&family=Fasthand&family=Nunito+Sans:wght@400;500;700&family=Paytone+One&family=Poppins:wght@300;600;800&family=Smooch&family=Ysabeau+SC:wght@500&display=swap');
+
+:root{
+    --main-color: #1556aa;
+    --black:#222;
+    --second-color:#666;
+    --light-white:#ccc;
+    --light-bg:#f5f5f5;
+    --dark-bg:rgba(0,0,0,.7);
+    --border:.1rem solid rgba(0,0,0,.3);
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    }
+
+    *{
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+   
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+.header{
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    background:rgba(8, 68, 180, 0.7) ;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+.navbar a:hover{
+    background: #18181f;
+    color: var(--text-color);
+    box-shadow: 5px 10px 30px rgba(26, 25, 25, 0.2);
+    border-radius: 4px;
+}
+
+.header .logo{
+    color: var(--light-bg);
+    font-size: 2.5rem;
+    font-family: "Merriweather", serif;
+   
+}
+
+.header .navbar a{
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    color: var(--light-bg);
+    font-weight: 500;
+    
+}
+
+
+.header .navbar a:hover{
+    color: #084ba3;
+    background: #eeeaea;
+}
+.header .icons i
+{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--main-color);
+    border-radius: 50%;
+    background: #eee;
+}
+.header .icons i:hover
+{
+    color: #fff;
+    background: var(--main-color);
+    transform: rotate(360deg);
+}
+.about{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(154, 154, 167, 0.459),rgba(129, 129, 139, 0.5)),url(https://img.freepik.com/free-photo/experiment-biotechnology-with-chemistry-science_23-2150365009.jpg?w=740&t=st=1710998175~exp=1710998775~hmac=0f87c12154f94dfaba646b2b7f43eed10d6094abae5c40c2b43d3e3b82809b19);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media (max-width: 991px){
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+    }
+    .container .contactInfo,
+    .contactForm{
+        width: 100%;
+    }
+
+}
+body{
+    width: 100%;
+}
+.title h1{
+    text-align: center;
+    padding-top: 60px;
+    font-size: 55px;
+    color: #ffffff;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+
+.about-1{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 75px auto;
+    text-align: center;
+}
+.card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 20px;
+    padding: 20px 20px;
+    background-color: #efefef;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.card:hover{
+    background-color: #b9c4e0;
+    transition: 0.4s ease;
+    border: blanchedalmond;
+    border-color: #efefef;
+}
+.card .icon{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #1369da;
+}
+.card h2{
+    font-size: 26px;
+    color: #1369da;
+    margin-bottom: 20px;
+}
+.card p{
+    font-size: 18px ;
+    color:#353232;
+}
+@media screen and (max-width: 940px){
+    .services{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        width: 85%;
+        display: flex;
+        margin: 20px 0px;
+    }
+}

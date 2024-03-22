@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ABC Laboratory Contact</title>
+    <link rel="stylesheet" type="text/css" href="cont01.css">
+
+	<link rel="icon" type="image/x-icon" href="images/microscope.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,800;1,900&display=swap" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+<body>
+	<section class="header" action="" method="post">
+             
+
+		<a href="#" class="logo"><i class="fa-solid fa-flask-vial"></i>ABC LABORATORIES </a>
+
+		<nav class="navbar">
+			<ul>
+
+		   <a class="active" href="Home.html">Home</a>
+		   <a href="About.html">About</a>
+		  
+		   <a href="contact.html">Contact</a>
+		  
+
+		</ul>
+
+	</nav>
+	<div class="icons">
+           
+		<a href="usertype.html"><i class="fa-solid fa-user" ></i></a>
+
+		</div>
+
+	</section>
+	<section class="contact">
+		<div class="content">
+			<h2>Contact Us</h2>
+			
+		</div>
+		
+		<div class="container">
+			<div class="contactInfo">
+				<div class="box">
+					<div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+					<div class="text">
+						<h3>Address</h3>
+						<p> ABC Laboratories <br>
+							123 Galle Road,<br>
+							Colombo 00300,<br>
+							Sri Lanka</p>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="icon"><i class="fa-solid fa-phone"></i></div>
+					<div class="text">
+						<h3>Phone</h3>
+						<p> 011 0058661</p>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="icon"><i class="fa-solid fa-envelope"></i></div>
+					<div class="text">
+						<h3>Email</h3>
+						<p> abclab@gmail.com</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="contactForm">
+				
+            <form class="messageForm" method="post" action="contact.php">
+				<h2>Get in a touch</h2>
+				<div class="inputBox">
+          <input type="text" name="txtName" placeholder="Your Name" value="" onkeydown="return alphaOnly(event);" required/>
+		 
+		</div>
+		<div class="inputBox">
+             <input type="email" name="txtEmail" placeholder="Your Email" value="" required />
+			
+			</div>
+
+			<div class="inputBox">
+              <input type="tel" name="txtPhone" placeholder="Phone Number" value="" minlength="10" maxlength="10" required />
+             
+              </div>
+
+              <div class="inputBox">
+              <textarea placeholder="Type Your Message" name="txtMsg"required></textarea>
+			  
+			</div>
+            <div class="inputBox">
+              <input type="submit" name="btnSubmit"   value="Send Message" />  
+            </div>       
+            </form>
+			</div>
+			</div>
+           </section>
+</div>
+
+</body>
+</html>
+
+
+
