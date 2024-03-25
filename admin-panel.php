@@ -86,7 +86,7 @@ function generate_bill(){
   $query=mysqli_query($con,"select p.pid,p.ID,p.fname,p.lname,p.doctor,p.appdate,p.apptime,p.disease,p.allergy,p.testresult,a.docFees from prestb p inner join appointmenttb a on p.ID=a.ID and p.pid = '$pid' and p.ID = '".$_GET['ID']."'");
   while($row = mysqli_fetch_array($query)){
     $output .= '
-    <label> Bill No : </label>HMS_'.$row["pid"].$row["ID"].'<br/><br/>
+    <label> Bill No : </label>ABC_'.$row["pid"].$row["ID"].'<br/><br/>
     <label> Patient : </label>'.$row["fname"].' '.$row["lname"].'<br/><br/>
     <label> Doctor : </label>'.$row["doctor"].'<br/><br/>
     <label> Appointment Date : </label>'.$row["appdate"].'<br/><br/>
@@ -125,7 +125,7 @@ if(isset($_GET["generate_bill"])){
 
   $content .= '
       <br/>
-      <h2 align ="center"> Hospital Management System</h2></br>
+      <h2 align ="center">ABC Laboratory</h2></br>
       <h3 align ="center"> Bill</h3>
       
 
